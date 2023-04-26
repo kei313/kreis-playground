@@ -134,12 +134,10 @@ body {
     margin-bottom: 3.5%;
   }
 }
-@media only screen and (max-width: 500px) {
-  #intro1{
-    margin-top: 15%;
-  }
-  .nav{
-    size: inherit;
+@media only screen and (max-width: 768px) {
+  #intro{
+    margin-top: 12.5%;
+    margin-bottom: 3.5%;
   }
 }
 
