@@ -18,14 +18,53 @@ body {
   font-weight:bolder;
   font-size:25px;
 }
+.logo{
+  text-shadow: 2px 2px 4px #000000;
+  color:white;
+}
+#logo1{
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  margin-top: 6px;
+}
+#sname{
+  position: relative;
+  left: 40%;
+}
 #intro{
   position: relative;
   width: 90%;
   margin-left: 5%;
   height: 628px;
-  border: 1px solid black;
-  margin-bottom: 3.8%;
+  /**border: 1px solid black;**/
+  margin-bottom: 3.9%;
   margin-top: 4%;
+}
+#hello{
+  position: absolute;
+  color: black;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 60px;
+  margin-left: 10%;
+}
+#name1{
+  position: absolute;
+  color: black;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 40px;
+  margin-left: 10%;
+  margin-top: 9%;
+}
+#smolintro{
+  position: absolute;
+  color: black;
+  font-family: 'Courier New', Courier, monospace;
+  width: 37%;
+  text-align: justify;
+  margin-left: 10%;
+  margin-top: 13.5%;
+  font-weight: bolder;
 }
 /**hover on menu/nav bar**/
 .menu li:hover{
@@ -129,9 +168,36 @@ body {
     color: white;
     background-color: #333;
   }
+  #logo1{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    margin-top: 6px;
+  }
+  #sname{
+    position: relative;
+    font-size: smaller;
+    left: 40%;
+  }
   #intro{
     margin-top: 12.5%;
-    margin-bottom: 3.5%;
+    margin-bottom: 3.9%;
+  }
+  #hello{
+    font-size: 60px;
+    margin-left: 10%;
+  }
+  #name1{
+    font-size: 40px;
+    margin-left: 10%;
+    margin-top: 25%;
+  }
+  #smolintro{
+    width: 70%;
+    text-align: center;
+    margin-left: 10%;
+    margin-top: 55%;
+    font-weight: bolder;
   }
 }
 @media only screen and (min-width: 360px) and (max-width: 480px) {
@@ -141,23 +207,8 @@ body {
   }
 }
 
-.logo{
-  text-shadow: 2px 2px 4px #000000;
-  color:white;
-}
-#logo1{
-  position: absolute;
-  width: 90px;
-  height: 90px;
-  margin-top: 6px;
-}
-#sname{
-  position: relative;
-  left: 40%;
-}
-
-
 footer {
+  position: relative;
   background-color: #333;
   color: #fff;
   padding: 10px;
