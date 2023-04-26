@@ -134,7 +134,7 @@ body {
     margin-bottom: 3.5%;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480px) {
   #intro{
     margin-top: 12.5%;
     margin-bottom: 3.5%;
