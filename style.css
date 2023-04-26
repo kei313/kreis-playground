@@ -164,6 +164,7 @@ body {
   .menu > li {
     display: flex;
     justify-content: center;
+    font-size: small;
     width: 30%;
     color: white;
     background-color: #333;
