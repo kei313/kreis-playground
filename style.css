@@ -120,6 +120,14 @@ body {
     color: white;
     background-color: #333;
   }
+  #intro1{
+    margin-top: 10%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #intro1{
+    margin-top: 15%;
+  }
 }
 
 .logo{
@@ -135,11 +143,6 @@ body {
 #sname{
   position: relative;
   left: 40%;
-}
-@media (max-width: 1100px) {
-  #intro1{
-    margin-top: 10%;
-  }
 }
 #intro{
   position: relative;
