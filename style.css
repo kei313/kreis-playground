@@ -5,6 +5,8 @@ body {
   color: #333;
   min-height:100%;
   margin:0;
+  background-image: url("images/background.png");
+  background-size: cover;
 }
 .nav {
   display: flex;
@@ -17,6 +19,49 @@ body {
   padding: 20px ;
   font-weight:bolder;
   font-size:25px;
+}
+.wrapper {
+  max-width: 100%;
+  margin: 0 20px;
+  display: flex;
+  flex-direction: row;
+  grid-gap: 10px;
+  font-family: 'Courier New', Courier, monospace;
+}
+.content{
+  margin-top: 5%;
+  text-align: center;
+  font-size: x-large;
+}
+#image{
+  width: 30%;
+  height: 30%;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+#image:hover{
+  -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(0%);
+}
+#p1{
+  text-align: center;
+}
+#hello:hover{
+  color: red;
+}
+#name1:hover{
+  color: green;
+}
+#p1:hover{
+  color: blue;
+}
+footer {
+  position: relative;
+  background-color: #333;
+  color: #fff;
+  margin-top: 8.7%;
+  padding: 10px;
+  text-align: center;
 }
 .logo{
   text-shadow: 2px 2px 4px #000000;
@@ -31,40 +76,6 @@ body {
 #sname{
   position: relative;
   left: 40%;
-}
-#intro{
-  position: relative;
-  width: 90%;
-  margin-left: 5%;
-  height: 628px;
-  /**border: 1px solid black;**/
-  margin-bottom: 3.9%;
-  margin-top: 4%;
-}
-#hello{
-  position: absolute;
-  color: black;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 60px;
-  margin-left: 10%;
-}
-#name1{
-  position: absolute;
-  color: black;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 40px;
-  margin-left: 10%;
-  margin-top: 15%;
-}
-#smolintro{
-  position: absolute;
-  color: black;
-  font-family: 'Courier New', Courier, monospace;
-  width: 37%;
-  text-align: justify;
-  margin-left: 10%;
-  margin-top: 23%;
-  font-weight: bolder;
 }
 /**hover on menu/nav bar**/
 .menu li:hover{
@@ -169,40 +180,17 @@ body {
     color: white;
     background-color: #333;
   }
+  .wrapper{
+    flex-direction: column;
+  }
+  #image{
+    width: 50%;
+    height: 50%;
+    margin-left: 25%;
+    margin-top: 5%;
+  }
 }
-@media only screen and (max-width: 800px) {
-  #intro{
-    margin-top: 12.5%;
-    margin-bottom: 3.5%;
-  }
-  #intro{
-    margin-top: 12.5%;
-    margin-bottom: 3.9%;
-  }
-  #hello{
-    font-size: 60px;
-    margin-left: 33%;
-  }
-  #name1{
-    font-size: 40px;
-    margin-left: 13%;
-    margin-top: 23%;
-    width: 80%;
-    text-align: center;
-  }
-  #smolintro{
-    width: 70%;
-    text-align: center;
-    margin-left: 18%;
-    margin-top: 50%;
-    font-weight: bolder;
-  }
-}  
 @media only screen and (max-width: 600px) {
-  #intro{
-    margin-top: 12.5%;
-    margin-bottom: 3.5%;
-  }
   #logo1{
     position: absolute;
     width: 60px;
@@ -214,35 +202,5 @@ body {
     font-size: smaller;
     left: 40%;
   }
-  #intro{
-    margin-top: 12.5%;
-    margin-bottom: 3.9%;
-  }
-  #hello{
-    font-size: 60px;
-    margin-left: 25%;
-  }
-  #name1{
-    font-size: 40px;
-    margin-left: 13%;
-    margin-top: 40%;
-    width: 80%;
-    text-align: center;
-  }
-  #smolintro{
-    width: 70%;
-    text-align: center;
-    margin-left: 15%;
-    margin-top: 75%;
-    font-weight: bolder;
-  }
 }
 
-
-footer {
-  position: relative;
-  background-color: #333;
-  color: #fff;
-  padding: 10px;
-  text-align: center;
-}
