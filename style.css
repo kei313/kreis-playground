@@ -8,6 +8,11 @@ body {
   background-image: url("images/background.png");
   background-size: cover;
 }
+header{
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+}
 .nav {
   display: flex;
   flex-direction: row;
@@ -29,11 +34,12 @@ body {
   font-family: 'Courier New', Courier, monospace;
 }
 .content{
-  margin-top: 5%;
+  margin-top: 10%;
   text-align: center;
   font-size: x-large;
 }
 #image{
+  margin-top: 7%;
   width: 30%;
   height: 30%;
   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
@@ -213,11 +219,14 @@ footer {
   .wrapper{
     flex-direction: column;
   }
+  .content{
+    margin-top: -3%;
+  }
   #image{
     width: 50%;
     height: 50%;
     margin-left: 25%;
-    margin-top: 5%;
+    margin-top: 30%;
   }
 }
 @media only screen and (max-width: 600px) {
