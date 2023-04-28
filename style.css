@@ -5,7 +5,7 @@ body {
   color: #333;
   min-height:100%;
   margin:0;
-  background-image: url("images/background.png");
+  background-image: url("images/background2.png");
   background-size: cover;
 }
 header{
@@ -66,10 +66,45 @@ header{
   height: 500px;
   margin: 0 20px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   grid-gap: 10px;
   font-family: 'Courier New', Courier, monospace;
-  border: 1px solid red;
+  padding-top: 7%;
+  align-items: center;
+}
+#p2{
+  text-align: center;
+  width: 80%;
+  font-size: larger;
+}
+tr, td {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 40px;
+}
+#ab{
+  font-weight: bolder;
+}
+#skills{
+  margin-top: -2%;
+}
+.skillwrap {
+  position: relative;
+}
+.skillwrap .skillcont {
+  display: none;
+  position: relative;
+  bottom: 5%;
+  left: 5%;
+  right: 5%;
+  color: white;
+  background-color: black;
+  padding: .5em;
+  min-width: 10rem;
+}
+.skillwrap:hover .skillcont {
+  display: block;
 }
 .projects{
   max-width: 100%;
@@ -79,7 +114,6 @@ header{
   flex-direction: row;
   grid-gap: 10px;
   font-family: 'Courier New', Courier, monospace;
-  border: 1px solid red;
 }
 .contacts{
   max-width: 100%;
@@ -89,7 +123,6 @@ header{
   flex-direction: row;
   grid-gap: 10px;
   font-family: 'Courier New', Courier, monospace;
-  border: 1px solid red;
 }
 footer {
   position: relative;
@@ -227,6 +260,9 @@ footer {
     height: 50%;
     margin-left: 25%;
     margin-top: 30%;
+  }
+  .about{
+    padding-top: 30%;
   }
 }
 @media only screen and (max-width: 600px) {
