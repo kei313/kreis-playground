@@ -61,6 +61,18 @@ header{
 #p1:hover{
   color: blue;
 }
+#ploc:hover{
+  color: red; 
+}
+#ploc:hover::after{
+  content: ", City of Love";
+}
+#pbdy{
+  color: green; 
+}
+#pbdy:hover::after{
+  content: " am 25";
+}
 .about{
   max-width: 100%;
   height: 500px;
